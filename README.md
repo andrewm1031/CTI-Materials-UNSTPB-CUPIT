@@ -4,10 +4,13 @@ Materiale pentru Facultatea de Electronica, Comunicatii si Calculatoare, special
 
 # [CTI Materials](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT)
 
+<details>
+<summary><b>Anul I (Click pentru a extinde/restrânge)</b></summary>
+<br>
 
 ### [Anul I](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%201)
-| Semestru | Discipline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | C | S | L | P | FE | Credite |
-|----------|----------------------------------------------------------------|---|---|---|---|----|---------|
+| Semestru | Discipline | C | S | L | P | FE | Credite |
+|----------|------------|---|---|---|---|----|---------|
 | I        | [Algebra liniara, geometrie analitica si diferentiala (ALGAD)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%201/Semestrul%201/Algebra) | 2 | 2 | - | - | E  | 4       |
 | I        | [Analiza matematica (AM)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%201/Semestrul%201/Analiza%20matematica) | 2 | 2 | - | - | E  | 5       |
 | I        | [Fizica (FIZ)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%201/Semestrul%201/Fizica) | 2 | 2 | - | - | E  | 5       |
@@ -24,9 +27,15 @@ Materiale pentru Facultatea de Electronica, Comunicatii si Calculatoare, special
 | II       | [Lb.Engleza II (Engleza)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%201/Semestrul%202/Lb%20Engleza%20II) | - | 2 | - | - | V  | 2       |
 | II       | [Educatie Fizica II](EF) | - | 1 | - | - | A/R| 3       |
 
+</details>
+
+<details>
+<summary><b>Anul II (Click pentru a extinde/restrânge)</b></summary>
+<br>
+
 ### [Anul II](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%202)
-| Semestru | Discipline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | C | S | L | P | FE | Credite |
-|----------|----------------------------------------------------------------|---|---|---|---|----|---------|
+| Semestru | Discipline | C | S | L | P | FE | Credite |
+|----------|------------|---|---|---|---|----|---------|
 | I        | [Electrotehnica (ELTH)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%202/Semestrul%201/Electrotehnica) | 2 | 1 | 1 | - | E  | 4       |
 | I        | [Electronica digitala (ED)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%202/Semestrul%201/Electronica%20digitala) | 2 | - | 1 | 1 | E  | 4       |
 | I        | [Dispozitive electronice si electronica analogica (DEEA)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%202/Semestrul%201/DEEA) | 2 | 1 | 1 | - | E  | 4       |
@@ -47,10 +56,15 @@ Materiale pentru Facultatea de Electronica, Comunicatii si Calculatoare, special
 | II       | [Programare logica si functionala (PLF)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%202/Semestrul%202/Programare%20logica%20si%20functionala) | 2 | - | 1 | - | E  | 3       |
 | II       | [Achizitia si prelucrarea datelor (APD)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%202/Semestrul%202/Achizitia%20si%20prelucrarea%20datelor) | 2 | - | 1 | - | C  | 3       |
 
+</details>
+
+<details>
+<summary><b>Anul III (Click pentru a extinde/restrânge)</b></summary>
+<br>
 
 ### [Anul III](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203)
-| Semestru | Discipline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | C | S | L | P | FE | Credite |
-|----------|----------------------------------------------------------------|---|---|---|---|----|---------|
+| Semestru | Discipline | C | S | L | P | FE | Credite |
+|----------|------------|---|---|---|---|----|---------|
 | I        | [Structura si organizarea calculatoarelor(SOC)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20I/Structura%20si%20organizarea%20calculatoarelor) | 2 | - | 2 | 1 | E  | 5       |
 | I        | [Proiectarea bazelor de date (PBD)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20I/Proiectarea%20bazelor%20de%20date) | 2 | - | 2 | - | C  | 4       |
 | I        | [Ingineria programelor (IP)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20I/Ingineria%20programelor) | 2 | - | 2 | - | E  | 5       |
@@ -66,9 +80,15 @@ Materiale pentru Facultatea de Electronica, Comunicatii si Calculatoare, special
 | II       | [Retele de calculatoare (RC)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20II/Retele%20de%20calculatoare) | 2 | - | 2 | - | E  | 4       |
 | II       | [Programare web (PW)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20II/Programare%20web) | 2 | - | 1 | - | C  | 3       |
 
+</details>
+
+<details>
+<summary><b>Anul IV (Click pentru a extinde/restrânge)</b></summary>
+<br>
+
 ### [Anul IV](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%204)
-| Semestru | Discipline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | C | S | L | P | FE | Credite |
-|----------|----------------------------------------------------------------|---|---|---|---|----|---------|
+| Semestru | Discipline | C | S | L | P | FE | Credite |
+|----------|------------|---|---|---|---|----|---------|
 | I        | [Prelucrarea imaginilor (PI)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%204/Semestrul%20I/Prelucrarea%20imaginilor) | 2 | - | 2 | - | C  | 4       |
 | I        | [Procesarea semnalelor (PS)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%204/Semestrul%20I/Procesarea%20semnalelor) | 3 | - | 2 | - | E  | 5       |
 | I        | [Sisteme de calcul in timp real (SCTR)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%204/Semestrul%20I/Sisteme%20de%20calcul%20in%20timp%20real) | 2 | - | 2 | - | E  | 4       |
@@ -86,3 +106,5 @@ Materiale pentru Facultatea de Electronica, Comunicatii si Calculatoare, special
 | II       | [Elaborarea Proiectului de diploma](EPD) | - | - | - | - | V  | 4       |
 | II       | [Sisteme de recunoasterea formelor(SRF)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%204/Semestrul%20II/Sisteme%20de%20recunoastere%20a%20formelor) | 2 | - | 1 | - | C  | 3       |
 | II       | [Sustinerea si promovarea examenului de diploma](SPED) | - | - | - | - | E  | 10      |
+
+</details>
