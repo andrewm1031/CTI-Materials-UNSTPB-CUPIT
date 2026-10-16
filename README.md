@@ -6,7 +6,7 @@ Materiale pentru Facultatea de Electronica, Comunicatii si Calculatoare, special
 
 ### [Anul I](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%201)
 
-| Semestru | Discipline | C | S | L | P | FE | Credite |
+| Semestru | Discipline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | C | S | L | P | FE | Credite |
 |:---:|---|:---:|:---:|:---:|:---:|:---:|:---:|
 | I | [Algebra liniara, geometrie analitica si diferentiala (ALGAD)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%201/Semestrul%201/Algebra) | 2 | 2 | - | - | E | 4 |
 | I | [Analiza matematica (AM)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%201/Semestrul%201/Analiza%20matematica) | 2 | 2 | - | - | E | 5 |
@@ -28,7 +28,7 @@ Materiale pentru Facultatea de Electronica, Comunicatii si Calculatoare, special
 
 ### [Anul II](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%202)
 
-| Semestru | Discipline | C | S | L | P | FE | Credite |
+| Semestru | Discipline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | C | S | L | P | FE | Credite |
 |:---:|---|:---:|:---:|:---:|:---:|:---:|:---:|
 | I | [Electrotehnica (ELTH)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%202/Semestrul%201/Electrotehnica) | 2 | 1 | 1 | - | E | 4 |
 | I | [Electronica digitala (ED)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%202/Semestrul%201/Electronica%20digitala) | 2 | - | 1 | 1 | E | 4 |
@@ -54,7 +54,7 @@ Materiale pentru Facultatea de Electronica, Comunicatii si Calculatoare, special
 
 ### [Anul III](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203)
 
-| Semestru | Discipline | C | S | L | P | FE | Credite |
+| Semestru | Discipline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | C | S | L | P | FE | Credite |
 |:---:|---|:---:|:---:|:---:|:---:|:---:|:---:|
 | I | [Structura si organizarea calculatoarelor(SOC)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20I/Structura%20si%20organizarea%20calculatoarelor) | 2 | - | 2 | 1 | E | 5 |
 | I | [Proiectarea bazelor de date (PBD)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20I/Proiectarea%20bazelor%20de%20date) | 2 | - | 2 | - | C | 4 |
@@ -75,7 +75,7 @@ Materiale pentru Facultatea de Electronica, Comunicatii si Calculatoare, special
 
 ### [Anul IV](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%204)
 
-| Semestru | Discipline | C | S | L | P | FE | Credite |
+| Semestru | Discipline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | C | S | L | P | FE | Credite |
 |:---:|---|:---:|:---:|:---:|:---:|:---:|:---:|
 | I | [Prelucrarea imaginilor (PI)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%204/Semestrul%20I/Prelucrarea%20imaginilor) | 2 | - | 2 | - | C | 4 |
 | I | [Procesarea semnalelor (PS)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%204/Semestrul%20I/Procesarea%20semnalelor) | 3 | - | 2 | - | E | 5 |
