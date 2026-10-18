@@ -1,0 +1,367 @@
+CURS 2
+
+Recap. 
+ 
+Sa calculam media aritmetica a unor numere stocate in fisierul text 
+numere.txt, cate un numar pe fiecare linie. Ex:
+-10
+10
+2
+  Nu stim de la inceput cate numere sunt.
+Rezulta media=2/3=0.66
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		try {
+			//Citim linie cu linie cu clasa BufferedReader si metoda readLine()
+			FileReader fr=new FileReader("numere.txt");
+			BufferedReader bfr=new BufferedReader(fr);
+			//se citeste linia crt cu metoda readLine:
+			int suma=0;
+			int N=0;//numarul de numere din fisier
+			for(;;) {
+				String s=bfr.readLine();
+				if(s==null)break;
+				N++;
+				suma+=Integer.parseInt(s);
+			}
+			double ma=suma/(double)N;
+			System.out.println("medie="+ma);
+			bfr.close(); fr.close();
+		}catch(IOException e) {
+			e.printStackTrace();
+			System.exit(0);
+		}
+	}
+
+}
+
+
+Distribuții de date. Date aleatoare. Generare seturi de date cu distributie uniformă și cu distribuție normală, în Java. Histograma. Regresia liniară. Implementare in Java.
+
+GENERAREA DE NUMERE ALEATOARE IN JAVA
+Folosite pentru a genera seturi mari de date
+Generarea de nr . aleatoare cu o distributie uniforma (probabilitatea de aparitie a fiecarui numar este egala) :
+
+La aruncarea unui zar: prob. este egala  : distributie uniforma
+Avem N oameni. Avem un set de inaltimi: [150cm, 151,....200] Distributia NU e uniforma , este o distributie normala
+
+Distributie uniforma de nr aleatoare:
+1) clasa Random, face parte din java.util
+   constructor:
+      public Random()
+   public int nextInt(int N)
+   scoate un nr aleator intreg in intervalul [0,N-1], fiecare nr cu probabilitate egala de aparitie
+
+Ex:
+Generam N=20 de nr aleatoare in gama [10,100] . Le memoram 
+intr-un vector si le afisam sortate
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Random r=new Random();
+		int a=10; int b=100;
+		int N=20;
+		int v[]=new int [N];
+		//introduc nr aleatoare in gama [20,100]:
+		for(int i=0;i<N;i++) 
+			v[i]=a+r.nextInt(b-a+1);
+		Arrays.sort(v);
+		for(int i=0;i<v.length;i++)
+			System.out.print(v[i]+" ");
+		
+	}
+}
+
+
+Pt a genera numere aleatoare reale (tot distributie uniforma):
+  clasa Random , metoda nextDouble():
+    public double nextDouble()  
+  Returneaza un nr real aleator in intervalul: [0,1)
+
+Putem folosi pt a genera nr. reale aleatoare si metoda statica random() din clasa Math:
+  public static double random() //genereaza un nr real aleator in [0,1)
+Se apeleaza direct:
+  double x=Math.random();
+
+La retele neuronale vom initializa ponderile w ale retelei cu numere aleatoare reale in gama [-0.5,0.5) astfel:
+double w=Math.random()-0.5;
+
+Cum generam un nr aleator INTREG in intervalul [0,N) folosind Math.random() ?
+    int nr=(int)N*Math.random();
+
+
+HISTOGRAMA
+ Grafic. 
+ Avem un set de valori. Pentru fiecare valoare distincta, calculam de cate ori apare ea in set, si reprezentam grafic:
+   pe Ox , valoarea
+   pe Oy , nr de aparitii
+
+Aplicatie:
+Citim N note intre 0 si 10 de la tastatura (11 valori distincte). 
+Calculam "histograma" acestor note: nr de aparitii pt fiecare nota (fara a reprezenta grafic)
+ 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N; System.out.print("N=");
+		N=sc.nextInt();
+		Random r=new Random();
+		int v[]=new int[N];
+		//note intre 0 si 10, generate aleator:
+		int contor[]=new int[11];//0..10
+		//contor[0]: de ccate ori apare valoarea 0
+		for(int i=0;i<11;i++)
+			contor[i]=0;
+		//Generam cele N note aleator:
+		for(int i=0;i<N;i++) {
+			int notaCrt=r.nextInt(11);
+			contor[notaCrt]++;
+			v[i]=notaCrt;
+		}
+		//Afisare contori, pe baza carora s-ar desena histograma:
+		for(int i=0;i<11;i++)
+			System.out.println("nota="+i+" nr. de aparitii: "+contor[i]);
+		System.out.println();
+		for(int i=0;i<N;i++)
+			System.out.print(v[i]+" ");
+		}
+		
+	}
+
+
+DISTRIBUTIA NORMALA A DATELOR (GAUSSIANA)
+
+Exemplu:
+  inaltimea, greutatea unei populatii - distrib. normala
+  distributia notelor la un examen
+
+Afara de distributia normala: distributia uniforma
+Histograma valorilor dau cu zarul : distributie uniforma
+
+Exmplu de distributie uniforma: aruncarea cu banul
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) {
+		final int N=10000;
+		int contor_0=0;
+		int contor_1=0;
+		Random r=new Random();
+		for(int i=0;i<N;i++) {
+			int nr=r.nextInt(2);
+			if(nr==0)contor_0++;
+			else contor_1++;
+		}
+		System.out.println("Nr. de valori de 0: "+contor_0);
+		System.out.println("Nr. de valori de 1: "+contor_1);
+	}
+}
+
+
+Distributia gaussina Nu mai este o distributie uniforma, ci datele sunt concentrate in jurul mediei. La o distributie normala: media=mediana
+  
+Cum  generam numere cu o distributie gaussiana in Java?
+In clasa Random, metoda nextGaussian():
+public double nextGaussian()
+Metoda returneaza urmatorul numar din setul cu distributie normala, generat de metoda nextGaussian(), 
+set ce are media 0.0 si deviatia standard 1.0 (Deci numarul generat, poate fi si negativ !)
+
+
+Aplicatie 
+ Generam N de numere aleatoare cu distributie normala, ce au media aritmetica  si deviatia standard specificate.
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Generam N=20 de numere cu distributie normala,
+		//cu dev. standard 2.5 si cu media arirmetica 10.
+		final int N=20;
+		final double devStandard=2.5;
+		final  double medie=10;
+		double x[]=new double[N];
+		Random r=new Random();
+		for(int i=0;i<N;i++) {
+			x[i]=10+devStandard*r.nextGaussian();
+			int nr=(int)(100*x[i]);
+			x[i]=nr/100.0;
+		}	
+		//afisare:
+		for(int i=0;i<N;i++)
+			System.out.print(x[i]+" ");
+		System.out.println();
+		//Ce deviatie standard au aceste date?
+		double devStandardCalculata=calculDevStandard(x);
+		System.out.println("dev. std. calculata="+devStandardCalculata);
+	}
+	static double calculDevStandard(double a[]) {
+    	double ma=medie(a);
+    	double suma=0;
+    	for(int i=0;i<a.length;i++)
+    		suma=suma+(a[i]-ma)*(a[i]-ma);
+    	double devStandard=Math.sqrt(suma/a.length);
+    	return devStandard;
+    }
+	static double medie(double a[]) {
+    	double suma=0;
+    	for(int i=0;i<a.length;i++)
+    		suma=suma+a[i];
+    	double ma=suma/a.length;
+    	return ma;
+    }
+
+}
+
+
+REGRESIA LINIARA
+  Regresie simpla sau multipla.
+Folosita pt a predictiona valori continue.
+(pt valori discrete: regresia logistica)
+Regresie liniara simpla: y=f(x)
+Regresie multipla: y=f(x1,x2,...)
+  La ce se foloseste regresia ?
+  Cand vrem sa gasim o relatie intre date.
+  Pentru a predictiona o valoare de iesire (variabila dependenta) CONTINUA.
+  Ex1: pretul de vanzare al apartamentelor in functie de an
+  Ex2:
+
+Temperatura de afara:        15    18    22       30 ...
+----------------------------------------------------------------
+Nr. de inghetate vandute:    100   150   300      500
+
+Reprezentam grafic punctele (temp, nr. inghetate vandute)
+Putem trage o linie intre aceste puncte
+
+Ma intereseaza daca temperatura de afara este 21 grade, cu cate inghetate ma aprovizionez ?
+
+Cum obtinem linia dreapta , pt ca pot fi trasate mai multe linii intre puncte ?
+Este dreapta pt care suma patratelor distantelor de la fiecare punct la dreapta cautata este MINIMA.
+
+
+Avem un set de date (x_i,y_i). Datele sunt reprezentate grafic ca niste puncte
+
+Alte exemple de posibile regresii liniare:
+(nr de ani de experienta, salariu)
+(sup. unei locuinte, chiria platita)
+
+Putem gasi ecuatia unei drepte care "trece" printre punctele respective.
+Ecuatia unei drepte: y=mx+n
+m=panta
+Cum calculam panta la matematica, daca cunoastem coordonatele a doua puncte de pe dreapta ?
+Daca avem doua puncte (x1,y1) si (x2,y2):
+y1=mx1+n
+y2=mx2+n
+Le scadem:
+y2-y1=m(x2-x1)
+Rezulta m=(y2-y1)/(x2-x1)
+
+Pot trasa mai multe drepte!
+Punctele: cat mai apropiate
+Mate:Este dreapta pt care suma patratelor distantelor de la fiecare punct la dreapta cautata este MINIMA.
+  Punctele disponibile sunt: (x [i],y[i])
+Rezulta formula: (fara demonstratie!)
+(m=Suma1/Suma2)
+m=Suma( (x[i]-x_medie)*(y[i]-y_medie) ) / Suma( (x[i]-x_medie)*(x[i]-x_medie) )
+ 
+n=y_medie-m*x_medie
+
+Program Java pt calculul dreptei de regresie:
+
+public class Main {
+
+	public static void main(String[] args) {
+		int x[]= {7,8,20,9,5,12,14,2,6,4};
+		int y[]= {10,8,100,9,3,20,30,1,4,2};
+		int N=x.length;
+		//Calculam m si n, pt dreapta de regresie 
+		// liniara:
+		//m=Suma( (x[i]-x_medie)(y[i]-y_medie) ) / Suma( (x[i]-x_medie)^2 )
+		//n=y_medie-m*x_medie
+		double x_medie=medieArit(x);
+		double y_medie=medieArit(y);
+		double suma1=0, suma2=0;
+		int i;
+		for(i=0;i<N;i++) {
+			suma1=suma1+(x[i]-x_medie)*(y[i]-y_medie);
+                        suma2=suma2+(x[i]-x_medie)*(x[i]-x_medie);
+		}
+		double m=suma1/suma2;
+		double n=y_medie-m*x_medie;
+		System.out.println("m="+m+" n="+n);
+	}
+	static double medieArit(int v[]) {
+		int suma=0;
+		for(int i=0;i<v.length;i++)
+			suma+=v[i];
+		return suma/(double)v.length;
+	}
+
+}
+Ce se intampla cand nu putem trece o linie dreapta printre punctele disponibile?
+(ex: punctele sunt dispuse pe o parabola)
+   Avem in acest caz REGRESIE POLINOMIALA.
+Cum stim daca se poate aplica regresia liniara? Nu validam  m (panta) si n rezultat, fara sa 
+verificam daca avem regresie liniara.
+Pt aceasta calculam valoarea r2 : coeficientul de corelatie
+Coeficientul de corelatie r2 este o masura statistica despre cat de bine regresia liniara
+aproximeaza datele reale.
+Formula pentru r2:
+  r2=Suma( (yR[i]-y_medie)^2 )/ Suma((y[i]-y_medie)^2) )
+
+
+Setul initial de date folosit in clasa RegresieLiniara:
+ int x[]= {7,8,20,9,5,12,14,2,6,4};
+ int y[]= {10,8,100,9,3,20,30,1,4,2};
+A rezultat ecuatia dreptei prin regresie liniara: m=5.025571483920961 n=-25.022471910112362
+
+ y=5.0x-25 (yR)
+
+Formula pentru r2:
+  r2=Suma( (yR[i]-y_medie)^2 )/ Suma((y[i]-y_medie)^2) )
+
+Daca din start toate punctele sunt pe o dreapta atunci r2=1
+  
+yR[i]=valoarea y estimata prin regresie liniara (y=17.2x-20.8)
+
+Cand avem o potrivire perfecta, yR[i]=y[i], deci  r2=1
+Ex: r2=0.6 - este o potrivire destul de buna
+Cu cat r2 este mai mic, cu atat nepotrivirea este mai mare
+r2=0.3 - nu este o potrivire buna
+
+  //calcul r2 pentru validare:
+    double yR[]=new double[N];
+        for(i=0;i<N;i++)
+        	yR[i]=m*x[i]+n;
+        double r2_suma1=0;
+        double r2_suma2=0;
+        for(i=0;i<N;i++) {
+        	r2_suma1+=(yR[i]-y_medie)*(yR[i]-y_medienu voi );
+        	r2_suma2+=(y[i]-y_medie)*(y[i]-y_medie);
+        }
+        double r2=r2_suma1/r2_suma2;
+        System.out.println("r2="+r2);//r2=0.8069556915

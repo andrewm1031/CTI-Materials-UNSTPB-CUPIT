@@ -1,0 +1,220 @@
+CURS 3
+
+Avem un fisier text, in fiecare linie mai multe numere separate printr-un singur spatiu.
+Sa calculam media aritmetica.
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int suma=0;
+		int contor=0;
+		try {
+			FileReader fr=new FileReader("date.txt");
+			BufferedReader bfr=new BufferedReader(fr);
+			for(;;) {
+				String s=bfr.readLine();
+				if(s==null)break;
+				//Pt a extrage atomii dintr-un String, avem in clasa String
+				// metoda split(). Returneaza u vector de Stringuri (atomii)
+				String v[]=s.split(" ");
+				contor=contor+v.length;
+				for(int i=0;i<v.length;i++)
+					suma=suma+Integer.parseInt(v[i]);
+			}
+			bfr.close();fr.close();
+		}catch(IOException e) {
+			System.exit(1);
+		}
+		double ma=suma/(double)contor;
+		//System.out.println("medie="+ma);
+		//Afisez media cu 2 zecimale:
+		System.out.printf("media=%.2f",ma);
+	}
+
+}
+
+Daca numerele erau separate prin unul sau mai multe spatii, singura modificare:
+
+String v[]=s.split("\\s+");//regexp
+
+
+O aplicatie cu regresie liniara?
+Sa estimam valoarea de cumparare a unui apartament in functie de suprafata sa, pe
+baza urmatoarele date:
+
+Suprafata (mp)     Valoarea (mii de euro)
+40			60
+55			82
+70			105
+85			124
+100			145
+120			172
+
+Pentru o sup. 90 de mp? Cat costa?
+Aceste date sunt intr-un fisier text
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+       //Citesc vectorul x[] si vectorul y[] din fisierul text, date.txt
+		int x[]=new int[1000];//dimensiune acoperitoare
+		int y[]=new int[1000];
+		int N=0;//dimensiunea efectiva a vectorilor (nr de linii din fisier)
+		try {
+			FileReader fr=new FileReader("date.txt");
+			BufferedReader bfr=new BufferedReader(fr);
+			int i=0;
+			for(;;) {
+				String s=bfr.readLine();
+				if(s==null)break;
+				//Structura unei linii citite: "40       60"
+				//Pres. ca este corecta structura fisierului
+				String v[]=s.split("\\s+");
+				x[i]=Integer.parseInt(v[0]);
+				y[i]=Integer.parseInt(v[1]);
+				i++;
+			}
+			N=i;
+			bfr.close();
+			fr.close();
+		}catch(IOException e) {
+			System.exit(1);
+		}
+		
+		
+		
+		//Calculam m si n, pt dreapta de regresie 
+		// liniara:
+		//m=Suma( (x[i]-x_medie)(y[i]-y_medie) ) / Suma( (x[i]-x_medie)^2 )
+		//n=y_medie-m*x_medie
+		double x_medie=medieArit(x);
+		double y_medie=medieArit(y);
+		double suma1=0, suma2=0;
+		int i;
+		for(i=0;i<N;i++) {
+			suma1=suma1+(x[i]-x_medie)*(y[i]-y_medie);
+                        suma2=suma2+(x[i]-x_medie)*(x[i]-x_medie);
+		}
+		double m=suma1/suma2;
+		double n=y_medie-m*x_medie;
+		System.out.println("m="+m+" n="+n);
+		//Cat costa o locuinta de 90 mp?
+		double pret=m*90+n;
+		System.out.printf("pret=%.2f mii de euro",pret);
+	}
+	static double medieArit(int v[]) {
+		int suma=0;
+		for(int i=0;i<v.length;i++)
+			suma+=v[i];
+		return suma/(double)v.length;
+	}
+}
+
+
+
+ALGORITMUL DE ML K-Nearest Neighbor (KNN)
+Folosit in principal pt clasificari. Este din 1951.
+Este un algoritm de invatare supervizata.
+Avem un set de N puncte, pentru fiecare punct stim clasa din care face 
+parte. Daca ni se da un punct nou, fara sa stim clasa din care face 
+parte, ce clasa din cele existente ii atribuim acestui punct?
+ALGO
+ -Calculam distantele de la noul punct la fiecare din cele N puncte
+ -sortam aceste distante in ordine crescatoare
+ -luam primele k puncte din vectorul sortat (cele mai apropiate ca 
+   distanta de punctul nou)
+ -din cele k puncte selectate, clasa care apare de cele mai multe ori, 
+  este clasa pe care o atribuim noului punct (votare majoritara)
+
+Valoarea k se alege de la inceput, in functie de problema de rezolvat.
+Se recomanda k sa fie impar pt a nu avea egalitate la votare (in cazul 
+in care este vorba de 2 clase )
+
+Cum se calculeaza distanta ?
+  Tipic se foloseste distanta euclidiana (in plan sau hiper-plan).
+Distanta euclidiana in plan: 
+  Avem (x1,y1) si (x2,y2) doua puncte in plan
+  Distanta d dintre ele este:
+    d=sqrt((x2-x1)^2+(y2-y1)^2
+ 
+Avantaje algoritm KNN:
+ -intuitiv, usor de inteles
+ -simplu de implementat
+Dezavantaj:
+  - daca N este mare, timpul de calcul va fi mare
+
+Exemple practice de folosire:
+-Estimare pret vanzare casa Se cauta cele mai apropiate K case vandute in zona respectiva si se face o medie aritmetica a preturilor lor.
+  Se stiu suprafata si vechimea fiecarei case si pretul de vanzare
+-Diagnostic medical (analiza 1, analiza 2, analiza 3, ... ---> pacientul are diabet)
+etc.
+
+
+Implementare pentru N puncte in plan, care fac parte din doua clase:
+clasa 0 (punct rosu) si clasa 1 (punct negru).
+Citim coordonatele unui nou punct: (x,y)
+In ce clasa il clasificam? Este rosu (0) sau negru (1) ?
+Solutie:
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int x[]= {1,7,9,15,16,18,20,30,90,123};
+		int y[]= {0,3,3,4,1,20,50,50,30,70};
+		int clasa[]= {0,0,0,0,0,1,1,1,1,1};
+		int N=x.length;//nr de puncte
+		//Citim coordonatele px si py ale unui nou punct:
+		Scanner sc=new Scanner(System.in);
+		System.out.print("px=");
+		int px=sc.nextInt();
+		System.out.print("py=");
+		int py=sc.nextInt();
+		//Din ce clasa face parte punctul (px,py)? Clasa 0 sau clasa 1?
+		int k=3;//alegere pt k, valoare impara
+		double dist[]=new double[N];//dist[i] este distanta intr punctele:
+		   //(px,py) si (x[i],y[i])
+		for(int i=0;i<N;i++)
+			dist[i]=Math.sqrt((px-x[i])*(px-x[i])+(py-y[i])*(py-y[i]));
+		//sortam in ordine crecatoare vectorul dist[]:
+		//Trebuie sa lucram in paralel si cu vectorul clasa[]!
+		//Sortare prin interschimbare:
+		for(int i=0;i<N-1;i++)
+			for(int j=i+1;j<N;j++)
+				if(dist[i]>dist[j]) {
+					double aux=dist[i];
+					dist[i]=dist[j];
+					dist[j]=aux;
+					//interschimb si clasele:
+					int temp=clasa[i];
+					clasa[i]=clasa[j];
+					clasa[j]=temp;
+				}
+		//Vot majoritar! Din ce clasa fac parte primii k vecini?
+		int contor_0=0;
+		int contor_1=0; 
+		for(int i=0;i<k;i++)
+			if(clasa[i]==0)contor_0++;
+			else contor_1++;
+		if(contor_0>contor_1)System.out.println("este clasa 0");
+		else System.out.println("este clasa 1");
+	}
+}
+//Ex. de rulare:
+px=8
+py=5
+este clasa 0
+//////////////////////////////////////////////////
+
+
+
+
+
+
