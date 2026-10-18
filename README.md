@@ -83,7 +83,7 @@ Materiale pentru Facultatea de Electronica, Comunicatii si Calculatoare, special
 | I | [Sisteme de calcul in timp real (SCTR)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%204/Semestrul%20I/Sisteme%20de%20calcul%20in%20timp%20real/Laboratoare) | - | - | - | 1 | V | 2 |
 | I | [Criptografie si Securitate informationala (CSI)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%204/Semestrul%20I/Criptografie%20si%20Securitate%20informationala) | 2 | - | 2 | - | E | 4 |
 | I | [Activitate de cercetare proiectare](ACP) | - | - | - | 2 | V | 3 |
-| I | [Sisteme inteligente (SI)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20II/Sisteme%20inteligente) | 2 | - | 1 | - | C | 4 |
+| I | [Sisteme inteligente (SI)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20I/Sisteme%20inteligente) | 2 | - | 1 | - | C | 4 |
 | I | [Invatare automata (ML)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%204/Semestrul%20I/Invatare%20automata) | 2 | - | 1 | - | E | 4 |
 | II | [Sisteme distribuite (SD)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%204/Semestrul%20II/Sisteme%20distribuite) | 2 | - | 2 | - | E | 4 |
 | II | [Retele locale (RL)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%204/Semestrul%20II/Retele%20locale) | 3 | - | 2 | - | E | 5 |
