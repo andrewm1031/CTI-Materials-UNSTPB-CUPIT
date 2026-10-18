@@ -66,7 +66,7 @@ Materiale pentru Facultatea de Electronica, Comunicatii si Calculatoare, special
 | II | [Algoritmi paraleli si distribuiti (APD)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20II/Algoritmi%20paraleli%20si%20distribuiti) | 3 | - | 2 | - | E | 5 |
 | II | [Proiectarea cu microprocesoare (PM)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20II/Proiectarea%20cu%20microprocesoare) | 3 | - | 2 | 1 | E | 6 |
 | II | [Sisteme de operare (SO)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20II/Sisteme%20de%20operare) | 2 | - | 2 | - | E | 4 |
-| II | [Teoria sistemelor (TS)] (https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20II/Teoria%20sistemelor)    | 2 | 1 | 1 | - | C | 4 |
+| II | | [Teoria sistemelor (TS)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20II/Teoria%20sistemelor) | 2 | 1 | 1 | - | C | 4 |
 | II | [Practica de specialitate](PS) | - | - | - | - | C | 4 |
 | II | [Retele de calculatoare (RC)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20II/Retele%20de%20calculatoare) | 2 | - | 2 | - | E | 4 |
 | II | [Programare web (PW)](https://github.com/andrewm1031/CTI-Materials-UNSTPB-CUPIT/tree/main/Anul%203/Semestrul%20II/Programare%20web) | 2 | - | 1 | - | C | 3 |
