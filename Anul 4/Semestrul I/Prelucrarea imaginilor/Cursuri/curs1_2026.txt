@@ -1,0 +1,23 @@
+PImage img;
+
+void settings(){
+  
+  img=loadImage("logan.jpg");
+  size(img.width,img.height); 
+  
+}
+
+void setup(){
+  //img.filter(THRESHOLD, 0.1);
+  for(int i=0;i<img.width;i++)
+    img.set(i,i,color(255,0,0));
+}
+
+void draw(){
+  image(img,0,0);
+  
+  fill(color(255,180,180));
+  square(mouseX-40,mouseY-40,80);
+
+
+}

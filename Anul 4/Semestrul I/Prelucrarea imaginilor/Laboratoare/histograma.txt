@@ -1,0 +1,63 @@
+PImage img;
+int w,h;
+int[] hist=new int[256];
+float[] pdf=new float[256];
+float[] cdf=new float[256];
+
+void settings(){
+ img=loadImage("gabriela.jpg");
+ w=img.width; 
+ h=img.height;
+ size(w+2*256+w,h);
+}
+
+void setup(){
+  
+ for(int i=0; i<256;i++)
+   hist[i]=0;
+ 
+ for(int i=0; i<w; i++)
+   for(int j=0; j<h; j++){
+       color c=img.get(i,j);
+       img.set(i,j,color(brightness(c)));
+       hist[(int) brightness(c)]++;
+   }
+  image(img, 0, 0);
+  int maxim=0;
+  for(int i=0; i<256;i++){
+    if(hist[i]>maxim) maxim=hist[i];
+    pdf[i]=hist[i]/(w*h+0.0);
+  }  
+  
+  cdf[0]=pdf[0];
+  
+  for(int i=1;i<256;i++)
+    cdf[i]=cdf[i-1]+pdf[i];  
+  
+  float maxim_pdf=0;
+  float maxim_cdf=0;
+  for(int i=0; i<256; i++) {
+    if(pdf[i]>maxim_pdf) maxim_pdf=pdf[i];
+    if(cdf[i]>maxim_cdf) maxim_cdf=cdf[i];
+  }
+  
+  for(int i=0; i<256;i++) {
+    line(w+i,h,w+i,h-hist[i]*h/maxim);
+    //line(w+256+i,h,w+256+i,h-pdf[i]*h/maxim_pdf);
+    line(w+256+i,h,w+256+i,h-cdf[i]*h/maxim_cdf);
+  }
+    
+  text("imaginea originala", 0, h-20);
+  text("histograma", w, h-20);
+  //text("pdf", w+256, h-20);
+  text("cdf", w+256, h-20);
+  
+   for(int i=0; i<w; i++)
+   for(int j=0; j<h; j++){
+       color c=img.get(i,j);
+       img.set(i,j, color( cdf[(int) brightness(c)]*255.0));
+   }
+   
+   image(img, w+2*256,0);
+   
+}
